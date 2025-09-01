@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 def home(request):
-    return HttpResponse("Hello, welcome to StudyBud!")
+    return render(request, 'home.html')
 
 def room(request):
-    return HttpResponse("This is a room page")
+    return render(request, 'room.html')
